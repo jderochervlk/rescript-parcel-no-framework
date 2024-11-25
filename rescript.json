@@ -1,0 +1,24 @@
+{
+  "name": "rescript-parcel",
+  "sources": [
+    {
+      "dir": "src",
+      "subdirs": true
+    }
+  ],
+  "package-specs": [
+    {
+      "module": "esmodule",
+      "in-source": true
+    }
+  ],
+  "suffix": ".res.js",
+  "bs-dependencies": [
+    "@rescript/core",
+    "@rescript/webapi"
+  ],
+  "bsc-flags": [
+    "-open RescriptCore",
+    "-open WebAPI.Global"
+  ]
+}

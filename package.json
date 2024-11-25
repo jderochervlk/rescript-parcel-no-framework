@@ -1,0 +1,19 @@
+{
+  "name": "rescript-parcel",
+  "source": "src/index.html",
+  "type": "module",
+  "scripts": {
+    "dev": "parcel",
+    "build": "npm run res:build && parcel build",
+    "res:dev": "rescript -w",
+    "res:build": "rescript build"
+  },
+  "dependencies": {
+    "@rescript/core": "^1.6.1",
+    "@rescript/webapi": "^0.1.0-experimental-ffc94c8",
+    "rescript": "^12.0.0-alpha.5"
+  },
+  "devDependencies": {
+    "parcel": "^2.13.0"
+  }
+}
